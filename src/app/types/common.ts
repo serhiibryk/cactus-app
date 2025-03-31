@@ -1,4 +1,4 @@
-export interface Character {
+export interface ICharacter {
   id: string;
   name: string;
   image: string;
@@ -13,6 +13,6 @@ export interface CharactersResponse {
       next: number | null;
       prev: number | null;
     };
-    results: Character[];
+    results: ICharacter[];
   };
 }
