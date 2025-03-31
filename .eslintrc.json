@@ -6,11 +6,102 @@
     "prettier"
   ],
   "parser": "@typescript-eslint/parser",
-  "parserOptions": { "project": "./tsconfig.eslint.json", "tsconfigRootDir": "./" },
+  "parserOptions": {
+    "project": "./tsconfig.eslint.json",
+    "tsconfigRootDir": "."
+  },
   "plugins": ["@typescript-eslint"],
   "root": true,
   "ignorePatterns": ["dist"],
   "rules": {
+    "no-restricted-exports": "off",
+    "react/no-array-index-key": "off",
+    "import/prefer-default-export": "off",
+    "curly": ["error", "all"],
+    "no-return-assign": "off",
+    "no-console": "off",
+    "func-names": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "import/newline-after-import": "off",
+    "no-nested-ternary": "off",
+    "import/no-named-as-default": "off",
+    "import/no-default-export": "off",
+    "import/no-anonymous-default-export": "error",
+    "import/no-extraneous-dependencies": "off",
+    "consistent-return": "off",
+    "no-alert": "off",
+    "default-case": "off",
+    "semi": "error",
+    "semi-style": ["error", "last"],
+    "@typescript-eslint/semi": "error",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "react/jsx-boolean-value": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/no-redeclare": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-var-requires": ["off"],
+    "@typescript-eslint/member-delimiter-style": [
+      "error",
+      {
+        "multiline": {
+          "delimiter": "semi",
+          "requireLast": true
+        },
+        "singleline": {
+          "delimiter": "semi",
+          "requireLast": false
+        }
+      }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "variable",
+        "format": ["camelCase", "PascalCase", "UPPER_CASE"],
+        "leadingUnderscore": "allow"
+      },
+      {
+        "selector": "function",
+        "format": ["camelCase", "PascalCase"],
+        "leadingUnderscore": "allow"
+      },
+      {
+        "selector": "typeLike",
+        "format": ["PascalCase"],
+        "leadingUnderscore": "allow"
+      }
+    ],
+    "class-methods-use-this": "off",
+    "@typescript-eslint/no-loss-of-precision": "off",
+    "no-empty-pattern": "off",
+    "react/destructuring-assignment": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/prop-types": "off",
+    "react/require-default-props": "off",
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/alt-text": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-no-useless-fragment": "off",
+    "no-param-reassign": "off",
+    "no-underscore-dangle": "off",
+    "@typescript-eslint/lines-between-class-members": "off",
+    "import/no-cycle": "off",
+    "prefer-regex-literals": "off",
     "@typescript-eslint/consistent-type-imports": [
       2,
       { "fixStyle": "separate-type-imports" }
