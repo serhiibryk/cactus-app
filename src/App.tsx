@@ -1,19 +1,15 @@
+import type { FC } from "react";
+
 import { ApolloProvider } from "@apollo/client";
 
-import CharactersList from "./components/CharactersList";
 import { client } from "./GraphQL/apollo/client";
+import AppRoutes from "./app/routes/AppRoutes";
 import "./App.css";
 
-// import logo from "./logo.svg"
-
-const App = () => {
-  return (
-    <div className="App">
-      <ApolloProvider client={client}>
-        <CharactersList />
-      </ApolloProvider>
-    </div>
-  );
-};
+const App: FC = () => (
+  <ApolloProvider client={client}>
+    <AppRoutes />
+  </ApolloProvider>
+);
 
 export default App;
